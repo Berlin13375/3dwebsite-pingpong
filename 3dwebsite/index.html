@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Enchanted Forest Ping Pong</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <div id="startScreen">
+        <h1 style="color: #00ffaa">🌲 Forest Pong 🌲</h1>
+        <input type="text" id="player1Input" class="player-input" placeholder="Player 1 Name" maxlength="12">
+        <input type="text" id="player2Input" class="player-input" placeholder="Player 2 Name" maxlength="12">
+        <button id="startButton" onclick="startGame()">Start Match</button>
+    </div>
+
+    <div class="score-container" id="player1Container">
+        <div class="player-name" id="player1Name">Player 1</div>
+        <div class="score" id="player1Score">0</div>
+    </div>
+    
+    <div class="score-container" id="player2Container">
+        <div class="player-name" id="player2Name">Player 2</div>
+        <div class="score" id="player2Score">0</div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</body>
+</html>
